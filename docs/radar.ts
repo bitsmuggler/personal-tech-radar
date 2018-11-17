@@ -20,9 +20,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+
 import * as d3 from "d3";
-
-
 
 function radar_visualization(config: any) {
 
@@ -446,3 +445,5 @@ function radar_visualization(config: any) {
     .force("collision", d3.forceCollide().radius(12).strength(0.85))
     .on("tick", ticked);
 }
+
+export {radar_visualization};
